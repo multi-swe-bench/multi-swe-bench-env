@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  <img src="assets/figures/logo.png" width="12%" alt="multi-swe-bench logo" style="vertical-align:middle;">
+  <img src="assets/figures/logo.png" width="7%" alt="multi-swe-bench logo" style="vertical-align:middle;">
   Multi-SWE-bench Evaluation
 </h1>
 
