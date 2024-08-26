@@ -1,14 +1,14 @@
-# Introduction
+## 🚀 Introduction
 
-Our **collect** section is based on the [SWE-bench](https://github.com/princeton-nlp/SWE-bench) collect module, with several modifications:
+Our **collect** section builds upon the [SWE-bench](https://github.com/princeton-nlp/SWE-bench) collect module, incorporating several key improvements:
 
-1. **More accurate base commit identification**: We discovered that the collect module in SWE-bench occasionally identifies incorrect base commits, causing issues when applying patches to pull requests. To address this, we introduced `commits_scraper.py` to accurately identify the correct base commit. In the future, we may revise the collect module code to retrieve the correct base commit directly.
+1. **🔍 Enhanced Base Commit Identification**: We identified that the original collect module in SWE-bench occasionally selects incorrect base commits, leading to issues when applying patches to pull requests. To resolve this, we introduced `commits_scraper.py`, a tool designed to accurately identify the correct base commit. Moving forward, we may update the collect module to retrieve the correct base commit directly.
 
-2. **Script for extracting Java test classes**: To correctly run specific tests in Java, we need to extract test class information. Therefore, we added `parse_mvn.py` to extract Java test class details.
+2. **📂 Java Test Class Extraction Script**: To ensure the correct execution of specific tests in Java, it's essential to accurately extract test class information. We addressed this need by adding `parse_mvn.py`, which extracts the necessary details from Java test classes.
 
-# Usage
+# 🛠️ Usage
 
-## Retrieve Pull Request Information
+## 📥 Retrieve Pull Request Information
 
 ```bash
 export GITHUB_TOKENS="token1,token2,...,tokenN"
@@ -28,7 +28,7 @@ This command fetches pull request information from specified repositories and sa
         * The `.json.all` includes these task instances as well.
 
 
-## Retrieve Base Commit
+## 🔄 Retrieve Base Commit
 
 ```bash
 python commits_scraper.py \
@@ -38,7 +38,7 @@ python commits_scraper.py \
 
 This command retrieves the base commit information for each pull request based on the `<repo>` folder within `base_dir` (formatted as `owner/repo`) and saves it to the `<repo>-commits.jsonl` file, which contains the base commit information for each pull request.
 
-## Extract Information
+## 📝 Extract Information
 
 ```bash
 python parse_mvn.py -r "$repo" --output_suffix with_package
