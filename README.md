@@ -1,18 +1,17 @@
+
+<h1 align="center">
+  <img src="assets/figures/logo.png" width="12%" alt="multi-swe-bench logo" style="vertical-align:middle;">
+  Multi-SWE-bench Evaluation
+</h1>
+
 <p align="center">
-  <a href="https://multi-swe-bench.github.io">
-    <img src="assets/figures/logo.png" width="12%" alt="multi-swe-bench logo" />
-  </a>
+  <a href="https://huggingface.co/datasets/Daoguang/Multi-SWE-bench">📁 Dataset</a> &nbsp;|&nbsp;
+  <a href="https://multi-swe-bench.github.io">🏆 Leaderboard</a> &nbsp;|&nbsp;
+  <a href="https://arxiv.org/abs/2310.06770">📄 Paper</a>
 </p>
 
-# Multi-SWE-bench Evaluation
 
-<div align="left">
-
- | [Dataset](https://huggingface.co/datasets/Daoguang/Multi-SWE-bench) | [Leaderboard](https://multi-swe-bench.github.io) | [Paper](https://arxiv.org/abs/2310.06770) |
-
-</div>
-
-### Evaluation
+## 📊 Evaluation
 Use `swebench.harness.run_evaluation` to evaluate your predictions on Multi-SWE-bench:
 ```bash
 python -m swebench.harness.run_evaluation \
