@@ -20,12 +20,12 @@ python get_tasks_pipeline.py \
 ```
 
 This command fetches pull request information from specified repositories and saves it to a designated folder. It generates three files:
-    - `<repo>-prs.jsonl` file containing the [metadata for every pull request](https://docs.github.com/rest/reference/pulls#list-pull-requests) from the repository.
-    - `<repo>-task-instances.jsonl.all` file containing all *valid* task instances (has associated issues + gold patch).
-        * This file's values can be used for fine tuning purposes.
-    - `<repo>-task-instances.jsonl` file containing *valid* task instances that also has associated *tests*.
-        * This file's values are candidate task instances. Once validated, they can be used for evaluation purposes.
-        * The `.json.all` includes these task instances as well.
+- `<repo>-prs.jsonl` file containing the [metadata for every pull request](https://docs.github.com/rest/reference/pulls#list-pull-requests) from the repository.
+- `<repo>-task-instances.jsonl.all` file containing all *valid* task instances (has associated issues + gold patch).
+    * This file's values can be used for fine tuning purposes.
+- `<repo>-task-instances.jsonl` file containing *valid* task instances that also has associated *tests*.
+    * This file's values are candidate task instances. Once validated, they can be used for evaluation purposes.
+    * The `.json.all` includes these task instances as well.
 
 
 ## 🔄 Retrieve Base Commit
