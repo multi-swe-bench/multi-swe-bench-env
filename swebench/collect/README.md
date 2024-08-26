@@ -47,5 +47,5 @@ python convert_fail_to_pass.py -r "$repo"
 ```
 
 These commands generate two files: 
-    - `<repo>-task-instances-with_package.jsonl` file containing the names of packages that need testing for each pull request.
-    - `<repo>-task-instances-fail_to_pass.json` file containing all necessary information for testing.
+- `<repo>-task-instances-with_package.jsonl` file containing the names of packages that need testing for each pull request.
+- `<repo>-task-instances-fail_to_pass.json` file containing all necessary information for testing.
