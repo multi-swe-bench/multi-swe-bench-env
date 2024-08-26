@@ -12,7 +12,32 @@
 
 </div>
 
-Coming soon!
+### Evaluation
+Use `swebench.harness.run_evaluation` to evaluate your predictions on Multi-SWE-bench:
+```bash
+python -m swebench.harness.run_evaluation \
+    --dataset_name xxxxxxx \
+    --predictions_path <path_to_predictions> \
+    --max_workers <num_workers> \
+    --run_id <run_id>
+    # use --predictions_path 'gold' to verify the gold patches
+    # use --run_id to name the evaluation run
+```
+
+You can also evaluate on specific issue instance:
+```bash
+python -m swebench.harness.run_evaluation \
+    --dataset_name xxxxxxx \
+    --predictions_path <path_to_predictions> \
+    --max_workers <num_workers> \
+    --run_id <run_id> \
+    --target_inst <instance_id>
+```
+
+The outputs include:
+- docker build logs under the `build_image_logs` directory
+- evaluation logs under the `run_instance_logs` directory
+- a result summary in the `<prediction_file_name>.<run_id>.json` file
 
 ## 📄 Citation
 
