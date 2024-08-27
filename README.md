@@ -9,12 +9,12 @@
   <a href="https://arxiv.org/abs/2408.14354">📄 Paper</a>
 </p>
 
+## 📰 News
+* **[Aug. 27, 2024]**:We’ve released the JAVA version of [SWE-bench](https://www.swebench.com)! Check it out on [Hugging Face](https://huggingface.co/datasets/Daoguang/Multi-SWE-bench). For more details, see our [paper](https://arxiv.org/pdf/2408.14354)!
+
 ## 🔧 Modifications
 
 This repository is a modified version of [SWE-bench](https://github.com/princeton-nlp/SWE-bench). If needed, please refer to their [evaluation process](https://github.com/princeton-nlp/SWE-bench) for guidance.
-
-## 📰 News
-* **[Aug. 27, 2024]**:We’ve released the JAVA version of [SWE-bench](https://www.swebench.com)! Check it out on [Hugging Face](https://huggingface.co/datasets/Daoguang/Multi-SWE-bench). For more details, see our [paper](https://arxiv.org/pdf/2408.14354)!
 
 ## 🚀 Set Up
 1. Docker setup
