@@ -10,17 +10,31 @@
 </p>
 
 ## 🚀 Set Up
-SWE-bench uses Docker for reproducible evaluations.
+1. Docker setup
+Multi-SWE-bench uses Docker for reproducible evaluations.
 Follow the instructions in the [Docker setup guide](https://docs.docker.com/engine/install/) to install Docker on your machine.
 If you're setting up on Linux, we recommend seeing the [post-installation steps](https://docs.docker.com/engine/install/linux-postinstall/) as well.
 
-Finally, to build Multi-SWE-bench from source, follow these steps:
+2. Build Multi-SWE-bench
+To build Multi-SWE-bench from source, follow these steps:
 ```bash
 git clone git@github.com:multi-swe-bench/multi-swe-bench-env.git
-cd SWE-bench
+cd multi-swe-bench-env
 pip install -e .
 ```
+3. Install repositories
+Install repositories locally to avoid repeatedly downloading repositories when running evaluations:
+```bash
+mkdir repos
+git clone https://github.com/google/gson.git
+git clone https://github.com/FasterXML/jackson-databind.git
+git clone https://github.com/FasterXML/jackson-core.git
+git clone https://github.com/FasterXML/jackson-dataformat-xml.git
+git clone https://github.com/apache/dubbo.git
+git clone https://github.com/GoogleContainerTools/jib.git
+```
 
+4. Validate installation
 Test your installation by running:
 ```bash
 python -m swebench.harness.run_evaluation \
@@ -43,14 +57,14 @@ python -m swebench.harness.run_evaluation \
     # use --run_id to name the evaluation run
 ```
 
-You can also evaluate on specific issue instance:
+You can also evaluate on specific issue instances:
 ```bash
 python -m swebench.harness.run_evaluation \
     --dataset_name Daoguang/Multi-SWE-bench \
     --predictions_path <path_to_predictions> \
     --max_workers <num_workers> \
     --run_id <run_id> \
-    --target_inst <instance_id>
+    --instance_ids <instance_id>
 ```
 
 The outputs include:
