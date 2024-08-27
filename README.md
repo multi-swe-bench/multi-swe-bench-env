@@ -33,6 +33,7 @@ pip install -e .
 Install repositories locally to avoid repeatedly downloading repositories when running evaluations:
 ```bash
 mkdir repos
+cd repos
 git clone https://github.com/google/gson.git
 git clone https://github.com/FasterXML/jackson-databind.git
 git clone https://github.com/FasterXML/jackson-core.git
@@ -44,6 +45,7 @@ git clone https://github.com/GoogleContainerTools/jib.git
 4. Validate installation
 Test your installation by running:
 ```bash
+cd ..
 python -m swebench.harness.run_evaluation \
     --predictions_path gold \
     --max_workers 1 \
