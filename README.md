@@ -6,8 +6,11 @@
 <p align="center">
   <a href="https://huggingface.co/datasets/Daoguang/Multi-SWE-bench">📁 Dataset</a> &nbsp;|&nbsp;
   <a href="https://multi-swe-bench.github.io">🏆 Leaderboard</a> &nbsp;|&nbsp;
-  <a href="https://arxiv.org/abs/2310.06770">📄 Paper</a>
+  <a href="https://arxiv.org/abs/2408.14354">📄 Paper</a>
 </p>
+
+## 📰 News
+* **[Aug. 27, 2024]**:We’ve released the JAVA version of [SWE-bench](https://www.swebench.com)! Check it out on [Hugging Face](https://huggingface.co/datasets/Daoguang/Multi-SWE-bench). For more details, see our [paper](https://arxiv.org/pdf/2408.14354)!
 
 ## 🚀 Set Up
 1. Docker setup
