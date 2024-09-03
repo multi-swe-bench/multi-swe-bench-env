@@ -4,19 +4,16 @@ with open('README.md', 'r', encoding='utf-8') as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='swebench',
-    author='John Yang',
-    author_email='byjohnyang@gmail.com',
-    description='The official SWE-bench package - a benchmark for evaluating LMs on software engineering',
+    name='multi-swebench',
     keywords='nlp, benchmark, code',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://swebench.com',
+    url='https://multi-swe-bench.github.io',
     project_urls={
-        'Documentation': 'https://github.com/princeton-nlp/SWE-bench',
-        'Bug Reports': 'http://github.com/princeton-nlp/SWE-bench/issues',
-        'Source Code': 'http://github.com/princeton-nlp/SWE-bench',
-        'Website': 'https://swebench.com',
+        'Documentation': 'https://github.com/multi-swe-bench/multi-swe-bench-env',
+        'Bug Reports': 'https://github.com/multi-swe-bench/multi-swe-bench-env/issues',
+        'Source Code': 'https://github.com/multi-swe-bench/multi-swe-bench-env',
+        'Website': 'https://multi-swe-bench.github.io',
     },
     packages=setuptools.find_packages(),
     classifiers=[
